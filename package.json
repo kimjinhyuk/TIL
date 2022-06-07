@@ -1,0 +1,17 @@
+{
+  "name": "jindocs",
+  "version": "1.0.0",
+  "description": "jin's wiki",
+  "main": "index.js",
+  "repository": "https://github.com/kimjinhyuk/TIL",
+  "author": "kimjinhyuk",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.1"
+  }
+}
