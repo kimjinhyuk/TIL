@@ -19,7 +19,7 @@ You may access frontmatter by `$frontmatter` helper inside any markdown file.
 
 - Type: `string`
 
-Title for the page. It's same as [config.title](../config/app-configs#title), and it overrides the app config.
+Title for the page. It's same as [config.title](#), and it overrides the app config.
 
 ```yaml
 ---
