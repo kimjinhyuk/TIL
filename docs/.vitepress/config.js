@@ -44,7 +44,7 @@ function nav() {
     { text: "React/NextJS", link: "/react/what-is-vitepress", activeMatch: '/react/' },
     { text: "Vue/NuxtJS", link: "/vue/introduction", activeMatch: '/vue/' },
     { text: "Svelte/SvelteKit", link: "/svelte/introduction", activeMatch: '/svelte/' },
-    { text: "TS", link: "/typescript/introduction", activeMatch: '/typescript/'},
+    { text: "TypeScript", link: "/typescript/introduction", activeMatch: '/typescript/'},
     { text: "기타", link: "/etc/introduction", activeMatch: '/etc/' },
   ]
 }
