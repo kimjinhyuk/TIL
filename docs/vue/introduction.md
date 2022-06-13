@@ -1,4 +1,4 @@
-# Introduction
+# Vue Introduction
 
 Place your configuration file at `.vitepress/config.js`. This is where all VitePress-specific files will be placed.
 
@@ -70,3 +70,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   }
 })
 ```
+
+<script setup>
+  import Comment from '../.vitepress/components/Comment.vue'
+</script>
+<Comment />

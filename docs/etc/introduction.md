@@ -70,3 +70,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   }
 })
 ```
+<script setup>
+  import Comment from '../.vitepress/components/Comment.vue'
+</script>
+<Comment />

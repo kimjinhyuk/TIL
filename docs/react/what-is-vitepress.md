@@ -52,4 +52,7 @@ VitePress is not compatible with the current VuePress ecosystem (mostly themes a
 
 There is an [ongoing disccussion](https://github.com/vuejs/vitepress/discussions/548) about this topic. If you're curious, please leave your thoughts!
 
+<script setup>
+  import Comment from '../.vitepress/components/Comment.vue'
+</script>
 <Comment />
