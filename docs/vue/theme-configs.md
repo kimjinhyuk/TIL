@@ -51,7 +51,7 @@ export default {
 
 - Type: `NavItem`
 
-The configuration for the nav menu item. You may learn more details at [Theme: Nav](../guide/theme-nav#navigation-links).
+The configuration for the nav menu item. You may learn more details at [Theme: Nav](#).
 
 ```js
 export default {
@@ -90,7 +90,7 @@ interface NavItemWithChildren {
 
 - Type: `Sidebar`
 
-The configuration for the sidebar menu item. You may learn more details at [Theme: Nav](../guide/theme-sidebar).
+The configuration for the sidebar menu item. You may learn more details at [Theme: Nav](#).
 
 ```js
 export default {

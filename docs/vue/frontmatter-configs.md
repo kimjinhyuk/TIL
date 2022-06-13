@@ -31,7 +31,7 @@ title: VitePress
 
 - Type: `string | boolean`
 
-The suffix for the title. It's same as [config.titleTemplate](../config/app-configs#titleTemplate), and it overrides the app config.
+The suffix for the title. It's same as [config.titleTemplate](#), and it overrides the app config.
 
 ```yaml
 ---
@@ -44,7 +44,7 @@ titleTemplate: Vite & Vue powered static site generator.
 
 - Type: `string`
 
-Title for the page. It's same as [config.description](../config/app-configs#description), and it overrides the app config.
+Title for the page. It's same as [config.description](#), and it overrides the app config.
 
 ```yaml
 ---
@@ -81,7 +81,7 @@ type Head =
 - Type: `boolean`
 - Default: `true`
 
-Whether to display [Last Updated](../guide/theme-last-updated) text in the current page.
+Whether to display [Last Updated](#) text in the current page.
 
 ```yaml
 ---
@@ -125,7 +125,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /react/what-is-vitepress
     - theme: alt
       text: View on GitHub
       link: https://github.com/vuejs/vitepress
