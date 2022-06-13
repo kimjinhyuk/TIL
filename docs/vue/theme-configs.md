@@ -192,7 +192,7 @@ export interface Footer {
 
 - Type: `EditLink`
 
-Edit Link lets you display a link to edit the page on Git management services such as GitHub, or GitLab. See [Theme: Edit Link](../guide/theme-edit-link) for more details.
+Edit Link lets you display a link to edit the page on Git management services such as GitHub, or GitLab. See [Theme: Edit Link](#) for more details.
 
 ```js
 export default {
@@ -251,4 +251,4 @@ export interface CarbonAds {
 }
 ```
 
-Learn more in [Theme: Carbon Ads](../guide/theme-carbon-ads)
+Learn more in [Theme: Carbon Ads](#)
