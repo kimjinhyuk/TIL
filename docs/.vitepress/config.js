@@ -55,7 +55,7 @@ function sidebarReact() {
       text: 'React',
       collapsible: true,
       items: [
-        { text: 'What is VitePress?', link: '/react/what-is-vitepress' },
+        { text: 'Introduction', link: '/react/README' },
       ]
     },
     {
