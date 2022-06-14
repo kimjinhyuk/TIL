@@ -6,23 +6,23 @@ hero:
   tagline: 개발공부 및 에러해결 기록을 위한 기술 블로그
 features:
   - icon: ⚡️
-    title: REACT
-    details: Vite, The DX that can't be beat
+    title: React
+    details: React ,Next.js and others related React stacks
   - icon: 🖖
     title: VUE
-    details: Power of Vue meets Markdown
+    details: Vue, Nuxt.js and others related Vue stacks
   - icon: 🛠️
-    title: TS, JS 
-    details: Simple and minimal, always
+    title: Svelte
+    details: svelte, SvelteKit 
   - icon: 💲
-    title: 기타
-    details: Simple and minimal, always
+    title: Typescript
+    details: JS, TS and other languages for front-end development
   - icon: 🖖
-    title: VUE
-    details: Power of Vue meets Markdown
+    title: ThreeJS
+    details: For WebGL and AR/VR stuffs
   - icon: ⚡️
-    title: REACT
-    details: Vite, The DX that can't be beat
+    title: ETC
+    details: 각종 팁, 개발뉴스
 ---
 
 # 개발을 위한 기록 저장소

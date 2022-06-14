@@ -41,10 +41,10 @@ export default {
 
 function nav() {
   return [
-    { text: "React/NextJS", link: "/react/README.md", activeMatch: '/react/' },
-    { text: "Vue/NuxtJS", link: "/vue/introduction", activeMatch: '/vue/' },
-    { text: "Svelte/SvelteKit", link: "/svelte/introduction", activeMatch: '/svelte/' },
-    { text: "TypeScript", link: "/typescript/introduction", activeMatch: '/typescript/'},
+    { text: "React", link: "/react/README.md", activeMatch: '/react/' },
+    { text: "Vue", link: "/vue/introduction", activeMatch: '/vue/' },
+    { text: "Svelte", link: "/svelte/introduction", activeMatch: '/svelte/' },
+    { text: "JS/TS", link: "/typescript/introduction", activeMatch: '/typescript/'},
     { text: "기타", link: "/etc/introduction", activeMatch: '/etc/' },
   ]
 }
