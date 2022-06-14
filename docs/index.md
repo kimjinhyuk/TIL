@@ -1,9 +1,9 @@
 ---
 layout: home
 hero:
-  name: 개발을 위한 기록 저장소
-  text: Vite & Vue Powered Static Site Generator
-  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
+  name: Jin's Tech Wiki
+  text: 개발을 위한 기록 저장소
+  tagline: 개발공부 및 에러해결 기록을 위한 기술 블로그
 features:
   - icon: ⚡️
     title: REACT

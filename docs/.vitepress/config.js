@@ -41,7 +41,7 @@ export default {
 
 function nav() {
   return [
-    { text: "React/NextJS", link: "/react/what-is-vitepress", activeMatch: '/react/' },
+    { text: "React/NextJS", link: "/react/README.md", activeMatch: '/react/' },
     { text: "Vue/NuxtJS", link: "/vue/introduction", activeMatch: '/vue/' },
     { text: "Svelte/SvelteKit", link: "/svelte/introduction", activeMatch: '/svelte/' },
     { text: "TypeScript", link: "/typescript/introduction", activeMatch: '/typescript/'},
@@ -110,10 +110,10 @@ function sidebarTypeScript() {
 function sidebarETC() {
   return [
     {
-      text: '기타',
+      text: 'ThreeJS',
       collapsible: true,
       items: [
-        { text: 'Introduction', link: '/etc/introduction' },
+        { text: 'Getting Started', link: '/etc/threejs/getting-started' },
       ]
     }
   ]
