@@ -44,7 +44,7 @@ function nav() {
     { text: "React", link: "/react/README.md", activeMatch: '/react/' },
     { text: "Vue", link: "/vue/introduction", activeMatch: '/vue/' },
     { text: "Svelte", link: "/svelte/introduction", activeMatch: '/svelte/' },
-    { text: "JS/TS", link: "/typescript/introduction", activeMatch: '/typescript/'},
+    { text: "JS/TS", link: "/typescript/introduction", activeMatch: '/typescript/' },
     { text: "기타", link: "/etc/introduction", activeMatch: '/etc/' },
   ]
 }
@@ -62,7 +62,7 @@ function sidebarReact() {
       text: 'NextJS',
       collapsible: true,
       items: [
-        { text: 'NextJS', link: '/react/markdown' },
+        { text: 'NextJS 구축한 portfolio v1', link: '/react/nextjs/portfolio-01' },
       ]
     },
   ]
