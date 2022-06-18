@@ -3,6 +3,7 @@ export default {
   description: "Jin's wiki for development",
 
   lastUpdated: true,
+  ga: '{UA-113513130-1}',
 
   themeConfig: {
 
