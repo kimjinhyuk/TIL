@@ -1,75 +1,58 @@
 # 기타 개발문서
 
-Place your configuration file at `.vitepress/config.js`. This is where all VitePress-specific files will be placed.
+기타 개발에 관련한 모든 기록 저장소
 
+:::info
+OS 별 환경설정이라던지, 개발에 관련된 뉴스를 기록하는 곳이 될 예정
+:::
+
+## 현재 개발 환경
+
+OS : Mac   
+Terminal : ZSH - iTerm, Hyper   
+IDE : VSCODE   
+
+Default shell : ZSH
+* Install oh-my-zsh
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-.
-├─ docs
-│  ├─ .vitepress
-│  │  └─ config.js
-│  └─ index.md
-└─ package.json
-```
+* Config oh-my-zsh
+[agnoster Github 페이지](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster)에서 다른 테마 확인
+```sh
+vim ~/.zshrc
 
-VitePress comes with 2 types of configs. One is the [App Configs](#) which configures the site's fundamental features such as setting title of the site, or customize how markdown parser works. Second is the [Theme Config](#) which configures the theme of the site, for example, adding a sidebar, or add features such as "Edit this page on GitHub" link.
+# theme
+agnoster
 
-There's also another configuration you may do in [Frontmatter](#). Frontmatter configs can override global configs defined on App Configs or Theme Configs for that specific page. However, there're several options that are only available at frontmatter as well.
-
-Please refer to the corresponding configs page to learn more.
-
-## Config Intellisense
-
-Since VitePress ships with TypeScript typings, you can leverage your IDE's intellisense with jsdoc type hints:
-
-```js
-/**
- * @type {import('vitepress').UserConfig}
- */
-const config = {
-  // ...
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+prompt_context() {
+  # Custom (Random emoji)
+  emojis=("⚡️" "🔥" "🇰 " "👑" "😎" "🐸" "🐵" "🦄" "🌈" "🍻" "🚀" "💡" "🎉" "🔑"  "🚦" "🌙")
+  RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
+  prompt_segment black default "Jin${emojis[$RAND_EMOJI_N]}"
 }
-
-export default config
 ```
+* zsh 플러그인 설치   
+```sh
+#zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+#zsh-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+#.zshrc
+plugins=( git zsh-autosuggestions zsh-syntax-highlighting )
 
 Alternatively, you can use the `defineConfig` helper at which should provide intellisense without the need for jsdoc annotations:
-
-```js
-import { defineConfig } from 'vitepress'
-
-export default defineConfig({
-  // ...
-})
 ```
 
-VitePress also directly supports TS config files. You can use `.vitepress/config.ts` with the `defineConfig` helper as well.
-
-## Typed Theme Config
-
-By default, `defineConfig` helper leverages the theme config type from default theme:
-
-```ts
-import { defineConfig } from 'vitepress'
-
-export default defineConfig({
-  themeConfig: {
-    // Type is `DefaultTheme.Config`
-  }
-})
+* 필요한 Software 설치를 위해 brew 설치
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+[Homebrew](https://brew.sh/index_ko)자세한 내용 참고
 
-If you use a custom theme and want type checks for the theme config, you'll need to use `defineConfigWithTheme` instead, and pass the config type for your custom theme via a generic argument:
-
-```ts
-import { defineConfigWithTheme } from 'vitepress'
-import { ThemeConfig } from 'your-theme'
-
-export default defineConfigWithTheme<ThemeConfig>({
-  themeConfig: {
-    // Type is `ThemeConfig`
-  }
-})
-```
 <script setup>
   import Comment from '../.vitepress/components/Comment.vue'
 </script>
