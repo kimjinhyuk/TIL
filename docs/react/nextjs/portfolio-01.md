@@ -115,6 +115,6 @@ export async function getStaticProps() {
 Tutorial : [개발하는 정대리](https://youtu.be/KvoFvmu5eRo )님의 유튜브 자세한 튜토리얼 
 
 <script setup>
-  import Comment from '../.vitepress/components/Comment.vue'
+import Comment from '../../.vitepress/component/Comment.vue'
 </script>
 <Comment />
