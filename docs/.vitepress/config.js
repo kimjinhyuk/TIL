@@ -18,6 +18,7 @@ export default {
       '/vue/': sidebarVue(),
       '/svelte/': sidebarSvelte(),
       '/typescript/': sidebarTypeScript(),
+      '/flutter/': sidebarFlutter(),
       '/etc/': sidebarETC()
     },
 
@@ -46,6 +47,7 @@ function nav() {
     { text: "Vue", link: "/vue/introduction", activeMatch: '/vue/' },
     { text: "Svelte", link: "/svelte/introduction", activeMatch: '/svelte/' },
     { text: "JS/TS", link: "/typescript/introduction", activeMatch: '/typescript/' },
+    { text: "Flutter", link: "/flutter/introduction", activeMatch: '/flutter/' },
     { text: "기타", link: "/etc/introduction", activeMatch: '/etc/' },
   ]
 }
@@ -103,6 +105,17 @@ function sidebarTypeScript() {
       collapsible: true,
       items: [
         { text: 'Introduction', link: '/typescript/introduction' },
+      ]
+    }
+  ]
+}
+function sidebarFlutter() {
+  return [
+    {
+      text: 'Flutter',
+      collapsible: true,
+      items: [
+        { text: 'Introduction', link: '/flutter/introduction' },
       ]
     }
   ]
