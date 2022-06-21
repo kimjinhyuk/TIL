@@ -117,7 +117,14 @@ function sidebarFlutter() {
       items: [
         { text: 'Introduction', link: '/flutter/introduction' },
       ]
-    }
+    },
+    {
+      text: 'Projects',
+      collapsible: true,
+      items: [
+        { text: 'First Flutter Project', link: '/flutter/projects/artplatform-project' },
+      ]
+    },
   ]
 }
 
