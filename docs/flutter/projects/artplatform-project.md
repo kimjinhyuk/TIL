@@ -7,7 +7,7 @@
 * provider: ^6.0.2
   * 상태관리
 * fluttertoast: ^8.0.9
-  * 상황병 alert
+  * 상황별 alert
 * confetti: ^0.6.0 
   * 이미지 생성시 꽃가루 효과
    

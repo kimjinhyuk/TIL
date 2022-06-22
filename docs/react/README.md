@@ -1,6 +1,6 @@
 # React
 
-React is [VuePress](https://vuepress.vuejs.org/)' little brother, built on top of [Vite](https://vitejs.dev/).
+![til-image](../images/til_image.png)
 
 ::: warning
 React is currently in `alpha` status. It is already suitable for out-of-the-box documentation use, but the config and theming API may still change between minor releases.
