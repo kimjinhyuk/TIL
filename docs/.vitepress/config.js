@@ -30,7 +30,7 @@ export default {
 
     algolia: {
       appId: '2PYJFF934D',
-      apiKey: 'd93ad5208ca649e037e05221699fefd9',
+      apiKey: 'abd72f6e9e469b20ba3f78536ffb6cc2',
       indexName: 'jindocs',
     },
 
@@ -42,7 +42,7 @@ function nav() {
   return [
     { text: 'React', link: '/react/README', activeMatch: '/react/' },
     { text: 'Vue', link: '/vue/README', activeMatch: '/vue/' },
-    { text: 'Svelte', link: '/svelte/README', activeMatch: '/svelte/' },
+    // { text: 'Svelte', link: '/svelte/README', activeMatch: '/svelte/' },
     { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
     { text: 'Flutter', link: '/flutter/README', activeMatch: '/flutter/' },
     { text: '기타', link: '/etc/README', activeMatch: '/etc/' },
