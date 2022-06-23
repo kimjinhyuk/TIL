@@ -6,7 +6,6 @@ export default {
   ga: '{G-1NXL6S8HF3}',
 
   themeConfig: {
-
     siteTitle: `Jin's Wiki`,
 
     logo: '/images/j-letter.png',
@@ -19,56 +18,49 @@ export default {
       '/svelte/': sidebarSvelte(),
       '/typescript/': sidebarTypeScript(),
       '/flutter/': sidebarFlutter(),
-      '/etc/': sidebarETC()
+      '/etc/': sidebarETC(),
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/kimjinhyuk' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/kimjinhyuk' }],
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present Jin'
+      copyright: 'Copyright © 2022-present Jin',
     },
 
     algolia: {
       appId: '2PYJFF934D',
       apiKey: 'd93ad5208ca649e037e05221699fefd9',
-      indexName: 'jindocs'
+      indexName: 'jindocs',
     },
 
-    lastUpdated: "Last Updated",
+    lastUpdated: 'Last Updated',
   },
-}
+};
 
 function nav() {
   return [
-    { text: "React", link: "/react/README.md", activeMatch: '/react/' },
-    { text: "Vue", link: "/vue/introduction", activeMatch: '/vue/' },
-    { text: "Svelte", link: "/svelte/introduction", activeMatch: '/svelte/' },
-    { text: "JS/TS", link: "/typescript/introduction", activeMatch: '/typescript/' },
-    { text: "Flutter", link: "/flutter/introduction", activeMatch: '/flutter/' },
-    { text: "기타", link: "/etc/introduction", activeMatch: '/etc/' },
-  ]
+    { text: 'React', link: '/react/README', activeMatch: '/react/' },
+    { text: 'Vue', link: '/vue/README', activeMatch: '/vue/' },
+    { text: 'Svelte', link: '/svelte/README', activeMatch: '/svelte/' },
+    { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
+    { text: 'Flutter', link: '/flutter/README', activeMatch: '/flutter/' },
+    { text: '기타', link: '/etc/README', activeMatch: '/etc/' },
+  ];
 }
 
 function sidebarReact() {
   return [
     {
       text: 'React',
-      collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/react/README' },
-      ]
+      items: [],
     },
     {
       text: 'NextJS',
       collapsible: true,
-      items: [
-        { text: 'NextJS 구축한 portfolio v1', link: '/react/nextjs/portfolio-01' },
-      ]
+      items: [{ text: 'NextJS 구축한 portfolio v1', link: '/react/nextjs/portfolio-01' }],
     },
-  ]
+  ];
 }
 
 function sidebarVue() {
@@ -77,13 +69,13 @@ function sidebarVue() {
       text: 'Vue',
       collapsible: true,
       items: [
-        { text: 'Introduction', link: '/vue/introduction' },
+        { text: 'Introduction', link: '/vue/README' },
         { text: 'App Configs', link: '/vue/app-configs' },
         { text: 'Theme Configs', link: '/vue/theme-configs' },
-        { text: 'Frontmatter Configs', link: '/vue/frontmatter-configs' }
-      ]
-    }
-  ]
+        { text: 'Frontmatter Configs', link: '/vue/frontmatter-configs' },
+      ],
+    },
+  ];
 }
 
 function sidebarSvelte() {
@@ -91,11 +83,9 @@ function sidebarSvelte() {
     {
       text: 'Svelte',
       collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/svelte/introduction' },
-      ]
-    }
-  ]
+      items: [{ text: 'Introduction', link: '/svelte/README' }],
+    },
+  ];
 }
 
 function sidebarTypeScript() {
@@ -103,29 +93,23 @@ function sidebarTypeScript() {
     {
       text: 'TypeScript',
       collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/typescript/introduction' },
-      ]
-    }
-  ]
+      items: [{ text: 'Introduction', link: '/typescript/README' }],
+    },
+  ];
 }
 function sidebarFlutter() {
   return [
     {
       text: 'Flutter',
       collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/flutter/introduction' },
-      ]
+      items: [{ text: 'Introduction', link: '/flutter/README' }],
     },
     {
       text: 'Projects',
       collapsible: true,
-      items: [
-        { text: 'First Flutter Project', link: '/flutter/projects/artplatform-project' },
-      ]
+      items: [{ text: 'First Flutter Project', link: '/flutter/projects/artplatform-project' }],
     },
-  ]
+  ];
 }
 
 function sidebarETC() {
@@ -133,9 +117,7 @@ function sidebarETC() {
     {
       text: 'ThreeJS',
       collapsible: true,
-      items: [
-        { text: 'Getting Started', link: '/etc/threejs/getting-started' },
-      ]
-    }
-  ]
+      items: [{ text: 'Getting Started', link: '/etc/threejs/getting-started' }],
+    },
+  ];
 }

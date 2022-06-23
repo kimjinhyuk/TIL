@@ -1,5 +1,5 @@
 # 기타 개발문서
-
+![til-image](../images/etc-image.png)
 기타 개발에 관련한 모든 기록 저장소
 
 :::info
