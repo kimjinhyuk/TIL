@@ -119,5 +119,15 @@ function sidebarETC() {
       collapsible: true,
       items: [{ text: 'Getting Started', link: '/etc/threejs/getting-started' }],
     },
+    {
+      text: 'Python',
+      collapsible: true,
+      items: [{ text: 'pipenv', link: '/etc/python/pipenv' }],
+    },
+    // {
+    //   text: 'FastAPI',
+    //   collapsible: true,
+    //   items: [{ text: 'Getting Started', link: '/etc/threejs/getting-started' }],
+    // },
   ];
 }
