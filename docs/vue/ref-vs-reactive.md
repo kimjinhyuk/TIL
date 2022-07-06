@@ -1,4 +1,4 @@
-# App Configs
+# Ref vs Reactive
 
 App configs are where you can define the global settings of the site. App configs define fundamental settings that are not only limited to the theme configs such as configuration for "base directory", or the "title" of the site.
 

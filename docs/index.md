@@ -8,19 +8,19 @@ features:
   - icon: ⚡️
     title: React
     details: React ,Next.js and others related React stacks
-  - icon: 🖖
+  - icon: 📗
     title: VUE
     details: Vue, Nuxt.js and others related Vue stacks
-  - icon: 🛠️
+  - icon: 🪜
     title: Svelte
     details: svelte, SvelteKit 
-  - icon: 💲
+  - icon: 🗄
     title: Typescript
     details: JS, TS and other languages for front-end development
-  - icon: 🖖
+  - icon: 👌🏻
     title: ThreeJS
     details: For WebGL and AR/VR stuffs
-  - icon: ⚡️
+  - icon: 📦
     title: ETC
     details: 각종 팁, 개발뉴스
 ---

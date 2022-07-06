@@ -69,8 +69,7 @@ function sidebarVue() {
       text: 'Vue',
       collapsible: true,
       items: [
-        { text: 'Introduction', link: '/vue/README' },
-        { text: 'App Configs', link: '/vue/app-configs' },
+        { text: 'ref() vs reactive()', link: '/vue/ref-vs-reactive' },
         { text: 'Theme Configs', link: '/vue/theme-configs' },
         { text: 'Frontmatter Configs', link: '/vue/frontmatter-configs' },
       ],
