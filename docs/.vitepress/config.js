@@ -1,9 +1,8 @@
+const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
+
 export default {
   title: `Jin's Wiki`,
   description: "Jin's wiki for development",
-
-  lastUpdated: true,
-  ga: '{G-1NXL6S8HF3}',
 
   themeConfig: {
     siteTitle: `Jin's Wiki`,
@@ -36,6 +35,11 @@ export default {
 
     lastUpdated: 'Last Updated',
   },
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-1NXL6S8HF3',
+    }),
+  ]
 };
 
 function nav() {

@@ -12,6 +12,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.48",
     "vitepress": "^1.0.0-alpha.1"
   }
 }
