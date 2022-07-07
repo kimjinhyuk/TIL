@@ -1,5 +1,4 @@
-const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
-
+// const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 export default {
   title: `Jin's Wiki`,
   description: "Jin's wiki for development",
@@ -35,11 +34,21 @@ export default {
 
     lastUpdated: 'Last Updated',
   },
-  plugins: [
-    googleAnalyticsPlugin({
-      id: 'G-1NXL6S8HF3',
-    }),
-  ]
+  head: [
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-1NXL6S8HF3",
+      },
+    ],
+    ["script", {}, ["window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-1NXL6S8HF3');"]],
+  ],
+  // plugins: [
+  //   googleAnalyticsPlugin({
+  //     id: 'G-1NXL6S8HF3',
+  //   }),
+  // ]
 };
 
 function nav() {
