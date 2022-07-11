@@ -7,6 +7,11 @@ export default {
   themeConfig: {
     siteTitle: `Jin's Wiki`,
     logo: '/images/j-letter.png',
+    algolia: {
+      apiKey: 'abd72f6e9e469b20ba3f78536ffb6cc2',
+      indexName: 'jindocs',
+      appId: '2PYJFF934D',
+    },
     nav: nav(),
 
     sidebar: {
@@ -24,13 +29,6 @@ export default {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Jin',
     },
-
-    algolia: {
-      apiKey: 'd93ad5208ca649e037e05221699fefd9',
-      indexName: 'jindocs',
-      appId: '2PYJFF934D',
-    },
-
     lastUpdated: 'Last Updated',
   },
   plugins: [
