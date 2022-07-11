@@ -1,4 +1,4 @@
-const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
+// const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 
 export default {
   title: `Jin's Wiki`,
@@ -44,7 +44,6 @@ function nav() {
   return [
     { text: 'React', link: '/react/README', activeMatch: '/react/' },
     { text: 'Vue', link: '/vue/README', activeMatch: '/vue/' },
-    // { text: 'Svelte', link: '/svelte/README', activeMatch: '/svelte/' },
     { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
     { text: 'Flutter', link: '/flutter/README', activeMatch: '/flutter/' },
     { text: '기타', link: '/etc/README', activeMatch: '/etc/' },
