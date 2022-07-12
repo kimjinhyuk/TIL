@@ -16,9 +16,9 @@ export default defineConfig({
     siteTitle: `Jin's Wiki`,
     logo: '/images/j-letter.png',
     algolia: {
-      apiKey: 'abd72f6e9e469b20ba3f78536ffb6cc2',
-      indexName: 'jindocs',
       appId: '2PYJFF934D',
+      apiKey: '7d597623c11cadef0273b63caea135f3',
+      indexName: 'jindocs',
     },
     nav: nav(),
 
