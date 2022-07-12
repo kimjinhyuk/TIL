@@ -1,4 +1,4 @@
-// const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
+const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 
 export default {
   title: `Jin's Wiki`,
