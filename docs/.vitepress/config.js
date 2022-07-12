@@ -35,6 +35,7 @@ export default {
     googleAnalyticsPlugin({
       id: 'G-1NXL6S8HF3',
     }),
+    "@vuepress/back-to-top"
   ]
 };
 
