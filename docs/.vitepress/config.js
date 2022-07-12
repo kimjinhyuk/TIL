@@ -1,4 +1,5 @@
 const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
+const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
 
 module.exports = {
   title: `Jin's Wiki`,
@@ -32,10 +33,10 @@ module.exports = {
     lastUpdated: 'Last Updated',
   },
   plugins: [
-    [googleAnalyticsPlugin({
+    googleAnalyticsPlugin({
       id: 'G-1NXL6S8HF3',
-    }),]
-    ["@vuepress/back-to-top"],
+    }),
+    backToTopPlugin(),
   ]
 };
 
