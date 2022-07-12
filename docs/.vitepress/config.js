@@ -2,9 +2,15 @@ const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
 
 module.exports = {
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-1NXL6S8HF3',
+    }),
+    backToTopPlugin()
+  ],
+
   title: `Jin's Wiki`,
   description: "Jin's wiki for development",
-
   themeConfig: {
     siteTitle: `Jin's Wiki`,
     logo: '/images/j-letter.png',
@@ -21,31 +27,25 @@ module.exports = {
       '/svelte/': sidebarSvelte(),
       '/typescript/': sidebarTypeScript(),
       '/flutter/': sidebarFlutter(),
+      '/threejs/': sidebarThreejs(),
       '/etc/': sidebarETC(),
     },
-
     socialLinks: [{ icon: 'github', link: 'https://github.com/kimjinhyuk' }],
-
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Jin',
     },
     lastUpdated: 'Last Updated',
   },
-  plugins: [
-    googleAnalyticsPlugin({
-      id: 'G-1NXL6S8HF3',
-    }),
-    backToTopPlugin(),
-  ]
 };
 
 function nav() {
   return [
     { text: 'React', link: '/react/README', activeMatch: '/react/' },
     { text: 'Vue', link: '/vue/README', activeMatch: '/vue/' },
-    { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
+    // { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
     { text: 'Flutter', link: '/flutter/README', activeMatch: '/flutter/' },
+    { text: 'ThreeJS', link: '/threejs/README', activeMatch: '/threejs/' },
     { text: '기타', link: '/etc/README', activeMatch: '/etc/' },
   ];
 }
@@ -97,6 +97,21 @@ function sidebarTypeScript() {
     },
   ];
 }
+function sidebarThreejs() {
+  return [
+    {
+      text: 'ThreeJS',
+      collapsible: true,
+      items: [{ text: 'Introduction', link: '/threejs/README' }],
+      items: [{ text: 'Animation', link: '/threejs/animations' }],
+    },
+    {
+      text: 'React-three-fiber',
+      collapsible: true,
+      items: [{ text: 'Getting Started', link: '/threejs/r3f/getting-started' }],
+    },
+  ];
+}
 function sidebarFlutter() {
   return [
     {
@@ -114,11 +129,6 @@ function sidebarFlutter() {
 
 function sidebarETC() {
   return [
-    {
-      text: 'ThreeJS',
-      collapsible: true,
-      items: [{ text: 'Getting Started', link: '/etc/threejs/getting-started' }],
-    },
     {
       text: 'Python',
       collapsible: true,
