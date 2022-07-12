@@ -1,7 +1,8 @@
+import { defineConfig } from 'vitepress';
 const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
 
-module.exports = {
+export default defineConfig({
   plugins: [
     googleAnalyticsPlugin({
       id: 'G-1NXL6S8HF3',
@@ -37,7 +38,7 @@ module.exports = {
     },
     lastUpdated: 'Last Updated',
   },
-};
+});
 
 function nav() {
   return [
@@ -102,8 +103,10 @@ function sidebarThreejs() {
     {
       text: 'ThreeJS',
       collapsible: true,
-      items: [{ text: 'Introduction', link: '/threejs/README' }],
-      items: [{ text: 'Animation', link: '/threejs/animations' }],
+      items: [
+        { text: 'Introduction', link: '/threejs/README' },
+        { text: 'Animation', link: '/threejs/animations' }
+      ],
     },
     {
       text: 'React-three-fiber',
