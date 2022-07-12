@@ -1,6 +1,6 @@
 const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 
-export default {
+module.exports = {
   title: `Jin's Wiki`,
   description: "Jin's wiki for development",
 
@@ -32,10 +32,10 @@ export default {
     lastUpdated: 'Last Updated',
   },
   plugins: [
-    googleAnalyticsPlugin({
+    [googleAnalyticsPlugin({
       id: 'G-1NXL6S8HF3',
-    }),
-    "@vuepress/back-to-top"
+    }),]
+    ["@vuepress/back-to-top"],
   ]
 };
 
