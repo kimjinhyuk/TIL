@@ -4,7 +4,7 @@ editLink: true
 ---
 # Animation
 ![three.js-journey](../images/open-graph-image-1200x630.png)
-:::info
+:::tip INFO
 Three.js-journey 강의노트 - 06 Animation
 :::
 ## HTML 생성   
@@ -42,8 +42,16 @@ const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 ```   
 ## 캔버스 사이즈 설정, 카메라, 렌더링
-`canvas`사이즈를 적당히 설정하고 [카메라](https://threejs.org/docs/index.html?q=camera#api/en/cameras/Camera) 셋팅 많은 카메라 셋팅을 이용해 scene를 구성 
-`PerspectiveCamera` : 가장 일반적인 모드이고 원근법이 적용되는 3D화면을 볼때 이용되는 카메라. 인간의 눈이 보는 방식을 모방하도록 설계됨. 
+`canvas`사이즈를 적당히 설정하고 [카메라](https://threejs.org/docs/index.html?q=camera#api/en/cameras/Camera) 셋팅 많은 카메라 셋팅을 이용해 scene를 구성    
+`PerspectiveCamera` : 가장 일반적인 모드이고 원근법이 적용되는 3D화면을 볼때 이용되는 카메라. 인간의 눈이 보는 방식을 모방하도록 설계됨.   
+* `PerspectiveCamera` 파라미터 
+  * `fov` - 숫자가 낮을 수록 근접해서 보는 효과   
+  * `AspectRatio` - 렌더링의 가로사이즈를 높이로 나눈 비율
+  * `Near and Far` - `z-fighting` 피하기 위해 적절한 값을 넣어야함
+   
+`OrthographicCamera` :  [OrthographicCamera](https://threejs.org/docs/#api/en/cameras/OrthographicCamera) 원근 단축법을 포함 하지 않는 프로젝션을 설명 합니다. 즉, OrthographicCamera 는 장면의 수평 지점에서 만나는 것이 아니라 평행한 보기 상자를 설명 합니다.   
+다음 다이어그램은 직교 및 원근 포어 카메라 프로젝션 차이 보여 줍니다.  - windows  
+![diagram](https://docs.microsoft.com/ko-kr/dotnet/media/camera-projections4.png?view=windowsdesktop-6.0)
 
 ```js
 const sizes = {

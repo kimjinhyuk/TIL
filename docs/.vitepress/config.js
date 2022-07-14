@@ -105,7 +105,8 @@ function sidebarThreejs() {
       collapsible: true,
       items: [
         { text: 'Introduction', link: '/threejs/README' },
-        { text: 'Animation', link: '/threejs/animations' }
+        { text: 'Animations', link: '/threejs/animations' },
+        { text: 'Cameras', link: '/threejs/cameras' }
       ],
     },
     {
