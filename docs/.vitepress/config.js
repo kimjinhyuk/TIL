@@ -55,7 +55,7 @@ function sidebarReact() {
   return [
     {
       text: 'React',
-      items: [],
+      items: [{ text: 'React 개발자 로드맵', link: '/react/roadmap' }],
     },
     {
       text: 'NextJS',
