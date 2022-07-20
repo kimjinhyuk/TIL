@@ -17,7 +17,7 @@ export default defineConfig({
     logo: '/images/j-letter.png',
     algolia: {
       appId: '2PYJFF934D',
-      apiKey: '7d597623c11cadef0273b63caea135f3',
+      apiKey: 'd93ad5208ca649e037e05221699fefd9',
       indexName: 'jindocs',
     },
     nav: nav(),
