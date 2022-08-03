@@ -1,7 +1,7 @@
 # ThreeJS 
 
 ## 설치   
-::: info
+::: tip INFO
 React-three-fiber 를 이용한 WebGL 설치
 * React-three-fiber 란?
   * Fiber 는 리액트 16.8 버전 이상과 호환 가능

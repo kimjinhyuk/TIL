@@ -2,7 +2,7 @@
 ![til-image](../images/etc-image.png)
 기타 개발에 관련한 모든 기록 저장소
 
-:::info
+:::tip INFO
 OS 별 환경설정이라던지, 개발에 관련된 기록 예정
 :::
 
