@@ -31,7 +31,10 @@ export default defineConfig({
       '/threejs/': sidebarThreejs(),
       '/etc/': sidebarETC(),
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/kimjinhyuk' }],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/kimjinhyuk' },
+      { icon: 'discord' }
+    ],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Jin',
@@ -48,6 +51,7 @@ function nav() {
     { text: 'Flutter', link: '/flutter/README', activeMatch: '/flutter/' },
     { text: 'ThreeJS', link: '/threejs/README', activeMatch: '/threejs/' },
     { text: '기타', link: '/etc/README', activeMatch: '/etc/' },
+    { text: 'Intro', link: '/intro/README' },
   ];
 }
 
