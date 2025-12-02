@@ -1,68 +1,81 @@
-import { defineConfig } from 'vitepress';
-const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
-const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
+import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  plugins: [
-    googleAnalyticsPlugin({
-      id: 'G-1NXL6S8HF3',
-    }),
-    backToTopPlugin()
+  // Google Analytics는 head에 직접 추가하거나 VitePress 전용 플러그인 사용 필요
+  head: [
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-1NXL6S8HF3",
+      },
+    ],
+    [
+      "script",
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1NXL6S8HF3');`,
+    ],
   ],
 
   title: `Jin's Wiki`,
   description: "Jin's wiki for development",
   themeConfig: {
     siteTitle: `Jin's Wiki`,
-    logo: '/images/j-letter.png',
+    logo: "/images/j-letter.png",
     algolia: {
-      appId: '2PYJFF934D',
-      apiKey: 'd93ad5208ca649e037e05221699fefd9',
-      indexName: 'jindocs',
+      appId: "2PYJFF934D",
+      apiKey: "d93ad5208ca649e037e05221699fefd9",
+      indexName: "jindocs",
     },
     nav: nav(),
 
     sidebar: {
-      '/react/': sidebarReact(),
-      '/vue/': sidebarVue(),
-      '/svelte/': sidebarSvelte(),
-      '/typescript/': sidebarTypeScript(),
-      '/flutter/': sidebarFlutter(),
-      '/threejs/': sidebarThreejs(),
-      '/etc/': sidebarETC(),
+      "/react/": sidebarReact(),
+      "/vue/": sidebarVue(),
+      "/svelte/": sidebarSvelte(),
+      "/typescript/": sidebarTypeScript(),
+      "/flutter/": sidebarFlutter(),
+      "/threejs/": sidebarThreejs(),
+      "/etc/": sidebarETC(),
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/kimjinhyuk' },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/kimjinhyuk" }],
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present Jin',
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2022-present Jin",
     },
-    lastUpdated: 'Last Updated',
+    lastUpdated: "Last Updated",
   },
 });
 
 function nav() {
   return [
-    { text: 'React', link: '/react/README', activeMatch: '/react/' },
-    { text: 'Vue', link: '/vue/README', activeMatch: '/vue/' },
+    { text: "React", link: "/react/README", activeMatch: "/react/" },
+    { text: "Vue", link: "/vue/README", activeMatch: "/vue/" },
     // { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
-    { text: 'Flutter', link: '/flutter/README', activeMatch: '/flutter/' },
-    { text: 'ThreeJS', link: '/threejs/README', activeMatch: '/threejs/' },
-    { text: '기타', link: '/etc/README', activeMatch: '/etc/' },
+    { text: "Flutter", link: "/flutter/README", activeMatch: "/flutter/" },
+    { text: "ThreeJS", link: "/threejs/README", activeMatch: "/threejs/" },
+    { text: "기타", link: "/etc/README", activeMatch: "/etc/" },
   ];
 }
 
 function sidebarReact() {
   return [
     {
-      text: 'React',
-      items: [{ text: 'React 개발자 로드맵', link: '/react/roadmap' }],
+      text: "React",
+      items: [{ text: "React 개발자 로드맵", link: "/react/roadmap" }],
     },
     {
-      text: 'NextJS',
+      text: "NextJS",
       collapsible: true,
-      items: [{ text: 'NextJS 구축한 portfolio v1', link: '/react/nextjs/portfolio-01' }],
+      items: [
+        {
+          text: "NextJS 구축한 portfolio v1",
+          link: "/react/nextjs/portfolio-01",
+        },
+      ],
     },
   ];
 }
@@ -70,12 +83,12 @@ function sidebarReact() {
 function sidebarVue() {
   return [
     {
-      text: 'Vue',
+      text: "Vue",
       collapsible: true,
       items: [
-        { text: 'ref() vs reactive()', link: '/vue/ref-vs-reactive' },
-        { text: 'Theme Configs', link: '/vue/theme-configs' },
-        { text: 'Frontmatter Configs', link: '/vue/frontmatter-configs' },
+        { text: "ref() vs reactive()", link: "/vue/ref-vs-reactive" },
+        { text: "Theme Configs", link: "/vue/theme-configs" },
+        { text: "Frontmatter Configs", link: "/vue/frontmatter-configs" },
       ],
     },
   ];
@@ -84,9 +97,9 @@ function sidebarVue() {
 function sidebarSvelte() {
   return [
     {
-      text: 'Svelte',
+      text: "Svelte",
       collapsible: true,
-      items: [{ text: 'Introduction', link: '/svelte/README' }],
+      items: [{ text: "Introduction", link: "/svelte/README" }],
     },
   ];
 }
@@ -94,41 +107,48 @@ function sidebarSvelte() {
 function sidebarTypeScript() {
   return [
     {
-      text: 'TypeScript',
+      text: "TypeScript",
       collapsible: true,
-      items: [{ text: 'Introduction', link: '/typescript/README' }],
+      items: [{ text: "Introduction", link: "/typescript/README" }],
     },
   ];
 }
 function sidebarThreejs() {
   return [
     {
-      text: 'ThreeJS',
+      text: "ThreeJS",
       collapsible: true,
       items: [
-        { text: 'Introduction', link: '/threejs/README' },
-        { text: 'Animations', link: '/threejs/animations' },
-        { text: 'Cameras', link: '/threejs/cameras' }
+        { text: "Introduction", link: "/threejs/README" },
+        { text: "Animations", link: "/threejs/animations" },
+        { text: "Cameras", link: "/threejs/cameras" },
       ],
     },
     {
-      text: 'React-three-fiber',
+      text: "React-three-fiber",
       collapsible: true,
-      items: [{ text: 'Getting Started', link: '/threejs/r3f/getting-started' }],
+      items: [
+        { text: "Getting Started", link: "/threejs/r3f/getting-started" },
+      ],
     },
   ];
 }
 function sidebarFlutter() {
   return [
     {
-      text: 'Flutter',
+      text: "Flutter",
       collapsible: true,
-      items: [{ text: 'Introduction', link: '/flutter/README' }],
+      items: [{ text: "Introduction", link: "/flutter/README" }],
     },
     {
-      text: 'Projects',
+      text: "Projects",
       collapsible: true,
-      items: [{ text: 'First Flutter Project', link: '/flutter/projects/artplatform-project' }],
+      items: [
+        {
+          text: "First Flutter Project",
+          link: "/flutter/projects/artplatform-project",
+        },
+      ],
     },
   ];
 }
@@ -136,9 +156,9 @@ function sidebarFlutter() {
 function sidebarETC() {
   return [
     {
-      text: 'Python',
+      text: "Python",
       collapsible: true,
-      items: [{ text: 'pipenv', link: '/etc/python/pipenv' }],
+      items: [{ text: "pipenv", link: "/etc/python/pipenv" }],
     },
     // {
     //   text: 'FastAPI',

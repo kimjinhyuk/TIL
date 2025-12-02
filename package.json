@@ -2,6 +2,7 @@
   "name": "jindocs",
   "version": "1.0.0",
   "description": "jin's wiki",
+  "type": "module",
   "main": "index.js",
   "repository": "https://github.com/kimjinhyuk/TIL",
   "author": "kimjinhyuk",
