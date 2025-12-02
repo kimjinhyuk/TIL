@@ -6,6 +6,9 @@
   "repository": "https://github.com/kimjinhyuk/TIL",
   "author": "kimjinhyuk",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.x"
+  },
   "scripts": {
     "docs:dev": "vitepress dev docs --port 4000",
     "docs:build": "vitepress build docs",
