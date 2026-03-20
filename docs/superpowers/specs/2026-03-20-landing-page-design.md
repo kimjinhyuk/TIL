@@ -104,15 +104,33 @@
 ## Implementation Approach
 
 ### VitePress Custom Theme
-1. `docs/.vitepress/theme/index.js` — 기본 테마 확장
-2. `docs/.vitepress/theme/components/HomePage.vue` — 커스텀 랜딩 컴포넌트
-3. `docs/.vitepress/theme/style.css` — 글로벌 CSS (글래스, 그리드, 글로우)
-4. `docs/index.md` — frontmatter에서 커스텀 레이아웃 사용
+
+VitePress는 `docs/.vitepress/theme/index.js`를 자동 감지한다 (config.js 수정 불필요).
+
+1. **`docs/.vitepress/theme/index.js`** — 기본 테마를 확장하고, `home` 레이아웃 슬롯을 오버라이드
+2. **`docs/.vitepress/theme/components/HomePage.vue`** — 커스텀 랜딩 컴포넌트 (nav 포함)
+3. **`docs/.vitepress/theme/style.css`** — 글로벌 CSS (글래스, 그리드, 글로우)
+
+### index.md 처리
+- `layout: page`로 변경하고, VitePress 기본 nav/footer를 CSS로 숨김 (홈 페이지에서만)
+- `HomePage.vue`를 `<script setup>`으로 import해서 마크다운 내에서 렌더링
+- 이렇게 하면 내부 페이지(projects/drp 등)에서는 기존 VitePress 테마가 그대로 유지됨
+
+### Nav 처리
+- 홈 페이지에서만 VitePress 기본 nav를 `display: none` 처리
+- `HomePage.vue` 안에 커스텀 글래스 nav를 자체 포함
+- 내부 페이지에서는 VitePress 기본 nav가 정상 표시됨
+
+### config.js
+- 변경 불필요. 기존 sidebar/nav 설정은 내부 페이지용으로 유지
 
 ### 데이터
-- Recent Posts: 하드코딩 또는 VitePress data loader
+- **Recent Posts: 하드코딩** (정적 배열). 기존 md 파일에 date/tag frontmatter가 없으므로 data loader는 부적합. 추후 블로그 글이 늘어나면 loader로 전환 가능.
 - Tech Stack: 정적 배열
-- Projects: 정적 배열 (추후 `docs/projects/` 파일에서 자동 로드 가능)
+- Projects: 정적 배열
+
+### Footer 연도
+- `© 2026 Jin` (동적 연도는 불필요, 연초에 수동 업데이트)
 
 ### 외부 의존성
 - Google Fonts: Inter
