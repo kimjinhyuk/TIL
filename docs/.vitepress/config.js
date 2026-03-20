@@ -1,7 +1,6 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  // Google Analytics는 head에 직접 추가하거나 VitePress 전용 플러그인 사용 필요
   head: [
     [
       "script",
@@ -33,13 +32,7 @@ export default defineConfig({
     nav: nav(),
 
     sidebar: {
-      "/react/": sidebarReact(),
-      "/vue/": sidebarVue(),
-      "/svelte/": sidebarSvelte(),
-      "/typescript/": sidebarTypeScript(),
-      "/flutter/": sidebarFlutter(),
-      "/threejs/": sidebarThreejs(),
-      "/etc/": sidebarETC(),
+      "/projects/": sidebarProjects(),
     },
     socialLinks: [{ icon: "github", link: "https://github.com/kimjinhyuk" }],
     footer: {
@@ -52,118 +45,25 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: "React", link: "/react/README", activeMatch: "/react/" },
-    { text: "Vue", link: "/vue/README", activeMatch: "/vue/" },
-    // { text: 'JS/TS', link: '/typescript/README', activeMatch: '/typescript/' },
-    { text: "Flutter", link: "/flutter/README", activeMatch: "/flutter/" },
-    { text: "ThreeJS", link: "/threejs/README", activeMatch: "/threejs/" },
-    { text: "기타", link: "/etc/README", activeMatch: "/etc/" },
+    { text: "Projects", link: "/projects/README", activeMatch: "/projects/" },
   ];
 }
 
-function sidebarReact() {
+function sidebarProjects() {
   return [
-    {
-      text: "React",
-      items: [{ text: "React 개발자 로드맵", link: "/react/roadmap" }],
-    },
-    {
-      text: "NextJS",
-      collapsible: true,
-      items: [
-        {
-          text: "NextJS 구축한 portfolio v1",
-          link: "/react/nextjs/portfolio-01",
-        },
-      ],
-    },
-  ];
-}
-
-function sidebarVue() {
-  return [
-    {
-      text: "Vue",
-      collapsible: true,
-      items: [
-        { text: "ref() vs reactive()", link: "/vue/ref-vs-reactive" },
-        { text: "Theme Configs", link: "/vue/theme-configs" },
-        { text: "Frontmatter Configs", link: "/vue/frontmatter-configs" },
-      ],
-    },
-  ];
-}
-
-function sidebarSvelte() {
-  return [
-    {
-      text: "Svelte",
-      collapsible: true,
-      items: [{ text: "Introduction", link: "/svelte/README" }],
-    },
-  ];
-}
-
-function sidebarTypeScript() {
-  return [
-    {
-      text: "TypeScript",
-      collapsible: true,
-      items: [{ text: "Introduction", link: "/typescript/README" }],
-    },
-  ];
-}
-function sidebarThreejs() {
-  return [
-    {
-      text: "ThreeJS",
-      collapsible: true,
-      items: [
-        { text: "Introduction", link: "/threejs/README" },
-        { text: "Animations", link: "/threejs/animations" },
-        { text: "Cameras", link: "/threejs/cameras" },
-      ],
-    },
-    {
-      text: "React-three-fiber",
-      collapsible: true,
-      items: [
-        { text: "Getting Started", link: "/threejs/r3f/getting-started" },
-      ],
-    },
-  ];
-}
-function sidebarFlutter() {
-  return [
-    {
-      text: "Flutter",
-      collapsible: true,
-      items: [{ text: "Introduction", link: "/flutter/README" }],
-    },
     {
       text: "Projects",
+      items: [{ text: "Overview", link: "/projects/README" }],
+    },
+    {
+      text: "진행중",
       collapsible: true,
       items: [
         {
-          text: "First Flutter Project",
-          link: "/flutter/projects/artplatform-project",
+          text: "DRP — AI 드로잉 로봇 플랫폼",
+          link: "/projects/drp",
         },
       ],
     },
-  ];
-}
-
-function sidebarETC() {
-  return [
-    {
-      text: "Python",
-      collapsible: true,
-      items: [{ text: "pipenv", link: "/etc/python/pipenv" }],
-    },
-    // {
-    //   text: 'FastAPI',
-    //   collapsible: true,
-    //   items: [{ text: 'Getting Started', link: '/etc/threejs/getting-started' }],
-    // },
   ];
 }

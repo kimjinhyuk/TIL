@@ -4,10 +4,10 @@
     "": {
       "name": "jindocs",
       "devDependencies": {
-        "@vuepress/plugin-back-to-top": "latest",
-        "@vuepress/plugin-google-analytics": "latest",
-        "typescript": "latest",
-        "vitepress": "latest",
+        "@vuepress/plugin-back-to-top": "^1.9.10",
+        "@vuepress/plugin-google-analytics": "^1.9.10",
+        "typescript": "^5.9.3",
+        "vitepress": "^1.6.4",
       },
     },
   },
