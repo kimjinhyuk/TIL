@@ -97,8 +97,9 @@ body:has(.home-page)::before {
 
 /* Big title — single line */
 .home-page .hero-title {
-  font-size: 72px; font-weight: 900; letter-spacing: -2px; line-height: 1;
+  font-size: 72px; font-weight: 900; letter-spacing: -2px; line-height: 1.15;
   position: relative; display: inline-block;
+  padding-bottom: 4px;
   background: linear-gradient(135deg, #ffffff 0%, rgba(140,170,255,0.9) 50%, rgba(180,140,255,0.8) 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   animation: fadeInUp 0.8s ease-out 0.1s both;
