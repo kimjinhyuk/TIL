@@ -1,10 +1,11 @@
 <script setup>
 const posts = [
+  { title: 'DRP #05 — AI 라인 드로잉 (Gemini 2.5 Flash Image)', tag: 'AI', date: '2026.04.25', link: '/projects/drp/2026-04-25-05-ai-line-drawing-gemini' },
+  { title: 'DRP #04 — A4 안전 좌표계 — 픽셀, mm, 그리고 클램핑', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-04-a4-safe-coordinate-system' },
+  { title: 'DRP #03 — 이미지 → 벡터 → 로봇 명령 풀 파이프라인', tag: 'Pipeline', date: '2026.04.25', link: '/projects/drp/2026-04-25-03-image-to-robot-pipeline' },
   { title: 'DRP #02 — JAKA 컨트롤러 raw TCP/JSON 프로토콜 — SDK 가 아닌 이유', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-02-jaka-raw-tcp-protocol' },
   { title: 'DRP #01 — Android Java TcpClient → Python 마이그레이션: 동작 호환 우선 전략', tag: 'Migration', date: '2026.04.25', link: '/projects/drp/2026-04-25-01-java-to-python-migration' },
   { title: 'DRP #00 — 시스템 전체 개요와 아키텍처 결정 기록 (ADR)', tag: 'Architecture', date: '2026.04.25', link: '/projects/drp/2026-04-25-00-system-overview-adr' },
-  { title: '사내 ERP 를 FastAPI + Next.js + 온프레미스 LLM 으로 만들면서 — 스택 선택의 이유', tag: 'Architecture', date: '2026.04.24', link: '/projects/groupware/2026-04-24-onprem-erp-stack' },
-  { title: 'PostgreSQL 하나로 해낸 하이브리드 검색 — pgvector + trigram + RRF', tag: 'Search', date: '2026.04.24', link: '/projects/groupware/2026-04-24-pgvector-hybrid-search' },
 ]
 
 const domains = [

@@ -75,6 +75,18 @@ function sidebarProjects() {
               text: "#02 JAKA raw TCP/JSON 프로토콜",
               link: "/projects/drp/2026-04-25-02-jaka-raw-tcp-protocol",
             },
+            {
+              text: "#03 이미지 → 벡터 → 로봇 명령 파이프라인",
+              link: "/projects/drp/2026-04-25-03-image-to-robot-pipeline",
+            },
+            {
+              text: "#04 A4 안전 좌표계",
+              link: "/projects/drp/2026-04-25-04-a4-safe-coordinate-system",
+            },
+            {
+              text: "#05 AI 라인드로잉 (Gemini)",
+              link: "/projects/drp/2026-04-25-05-ai-line-drawing-gemini",
+            },
           ],
         },
         {

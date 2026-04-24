@@ -65,29 +65,35 @@
     </div>
   </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#03</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">이미지 → 벡터 → 로봇 명령 풀 파이프라인 <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">4단계 fallback 벡터화 + Douglas-Peucker + 최근접 이웃</div>
+  <a href="./2026-04-25-03-image-to-robot-pipeline" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #1c1206; border: 1px solid #f0883e; display: flex; align-items: center; justify-content: center; color: #f0883e; font-weight: 700; font-size: 13px;">#03</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">이미지 → 벡터 → 로봇 명령 풀 파이프라인</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">4단계 fallback 벡터화 · Douglas-Peucker · NN+2-opt 경로 정렬 · dry-run 로드맵</div>
+      </div>
     </div>
-  </div>
+  </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#04</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">A4 안전 좌표계 — 픽셀, mm, 그리고 클램핑 <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">정규화 수식 · 안전 마진 · Z 분리 · dry-run 시뮬레이터</div>
+  <a href="./2026-04-25-04-a4-safe-coordinate-system" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #04260f; border: 1px solid #3fb950; display: flex; align-items: center; justify-content: center; color: #3fb950; font-weight: 700; font-size: 13px;">#04</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">A4 안전 좌표계 — 픽셀, mm, 그리고 클램핑</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">Java 원본 공식 보존 · 3층 방어(소프트/하드/펌웨어) · Canvas 추상화 로드맵</div>
+      </div>
     </div>
-  </div>
+  </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#05</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">AI 라인 드로잉 (Gemini 2.5 Flash Image) <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">4가지 스타일 프롬프트 · 로컬 모델 대체 검토</div>
+  <a href="./2026-04-25-05-ai-line-drawing-gemini" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #1a0e30; border: 1px solid #d2a8ff; display: flex; align-items: center; justify-content: center; color: #d2a8ff; font-weight: 700; font-size: 13px;">#05</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">AI 라인 드로잉 (Gemini 2.5 Flash Image)</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">4가지 스타일 프롬프트 · 프롬프트 템플릿화 · 로컬 SD+ControlNet 파일럿</div>
+      </div>
     </div>
-  </div>
+  </a>
 
   <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
     <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#06</div>
