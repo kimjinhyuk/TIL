@@ -1,0 +1,106 @@
+/* VitePress 문서 페이지 반응형 safeguard
+ * 홈페이지 커스텀 레이아웃(home.css) 외의 모든 마크다운 문서 페이지에 적용.
+ * DRP/그룹웨어 연구 노트 글 등에서 쓰는 인라인 <div> 다이어그램이 좁은
+ * 모바일 뷰포트에서 넘치지 않도록 방어한다.
+ */
+
+/* 1) 문서 뷰포트 전역 가로 스크롤 차단
+ *    홈페이지는 body:has(.home-page) 가 이미 처리하므로 그 외 페이지에만 건다.
+ */
+body:not(:has(.home-page)) {
+  overflow-x: hidden;
+}
+
+body:not(:has(.home-page)) .VPContent,
+body:not(:has(.home-page)) .vp-doc {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2) 마크다운 문서 안의 모든 요소가 부모 폭을 넘지 못하게 */
+.vp-doc * {
+  box-sizing: border-box;
+}
+
+.vp-doc img,
+.vp-doc svg,
+.vp-doc video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 3) 긴 코드 블록은 블록 내부에서 가로 스크롤 (페이지 스크롤은 유발하지 않음) */
+.vp-doc pre,
+.vp-doc pre > code {
+  max-width: 100%;
+  overflow-x: auto;
+  word-break: normal;
+}
+
+.vp-doc p > code,
+.vp-doc li > code,
+.vp-doc td > code {
+  word-break: break-word;
+}
+
+/* 4) 마크다운 표: 좁은 뷰포트에서 내부 스크롤 허용 */
+.vp-doc table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ============================================================
+ * 모바일 (<= 640px) — 인라인 스타일 그리드를 세로 스택으로
+ * DRP/그룹웨어 글들이 인라인 style 로 grid-template-columns 를
+ * 고정해 쓰기 때문에 CSS 특이성 이슈를 피하려고 !important 사용.
+ * ============================================================ */
+@media (max-width: 640px) {
+  .vp-doc div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .vp-doc div[style*="display: flex"],
+  .vp-doc div[style*="display:flex"] {
+    flex-wrap: wrap;
+  }
+
+  /* 카드 박스에 min-width 가 남아 있어도 부모 폭 초과 금지 */
+  .vp-doc div[style*="min-width"] {
+    min-width: 0 !important;
+  }
+
+  /* 고정된 max-width 컨테이너들이 화면보다 클 때 */
+  .vp-doc div[style*="max-width"] {
+    max-width: 100% !important;
+  }
+
+  /* ADR/상수 표: 3~4열 inline grid 가 세로로 접히면서
+   * 라벨/값/설명이 한 줄씩 떨어지도록 좌측 정렬 보정 */
+  .vp-doc div[style*="grid-template-columns"] > div {
+    min-width: 0;
+  }
+
+  /* 문서 본문 패딩 축소로 가용폭 확보 */
+  .VPDoc.has-aside .content-container,
+  .VPDoc .vp-doc {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ============================================================
+ * 초소형 (<= 420px) — 패딩 더 축소 + 폰트 소폭 조정
+ * ============================================================ */
+@media (max-width: 420px) {
+  .vp-doc h1 { font-size: 1.6rem; }
+  .vp-doc h2 { font-size: 1.3rem; }
+  .vp-doc h3 { font-size: 1.1rem; }
+
+  .vp-doc pre {
+    font-size: 12px;
+    padding: 12px;
+  }
+}

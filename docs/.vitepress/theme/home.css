@@ -13,6 +13,14 @@ body:has(.home-page) {
   overflow-x: hidden;
 }
 
+/* 홈 컨테이너 자체도 수평 넘침을 클립 — :has() 미지원 브라우저 대비 +
+ * top-glow 등 장식 요소가 뷰포트 밖으로 실제로 삐져나가지 않도록 확실히. */
+.home-page {
+  position: relative;
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
 /* Background grid */
 body:has(.home-page)::before {
   content: ''; position: fixed; inset: 0;
@@ -26,14 +34,16 @@ body:has(.home-page)::before {
 /* Top glow */
 .home-page .top-glow {
   position: absolute; top: -250px; left: 50%; transform: translateX(-50%);
-  width: 1000px; height: 700px;
+  width: min(1000px, 100vw); height: 700px;
+  max-width: 100vw;
   background: radial-gradient(ellipse, rgba(80,110,255,0.18) 0%, rgba(60,90,255,0.06) 35%, transparent 65%);
   pointer-events: none; z-index: 0;
 }
 /* Secondary glow */
 .home-page .top-glow::after {
   content: ''; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
-  width: 500px; height: 300px;
+  width: min(500px, 100vw); height: 300px;
+  max-width: 100vw;
   background: radial-gradient(ellipse, rgba(140,160,255,0.1) 0%, transparent 60%);
 }
 
