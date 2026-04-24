@@ -1,9 +1,10 @@
 <script setup>
 const posts = [
+  { title: 'DRP #02 — JAKA 컨트롤러 raw TCP/JSON 프로토콜 — SDK 가 아닌 이유', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-02-jaka-raw-tcp-protocol' },
+  { title: 'DRP #01 — Android Java TcpClient → Python 마이그레이션: 동작 호환 우선 전략', tag: 'Migration', date: '2026.04.25', link: '/projects/drp/2026-04-25-01-java-to-python-migration' },
+  { title: 'DRP #00 — 시스템 전체 개요와 아키텍처 결정 기록 (ADR)', tag: 'Architecture', date: '2026.04.25', link: '/projects/drp/2026-04-25-00-system-overview-adr' },
   { title: '사내 ERP 를 FastAPI + Next.js + 온프레미스 LLM 으로 만들면서 — 스택 선택의 이유', tag: 'Architecture', date: '2026.04.24', link: '/projects/groupware/2026-04-24-onprem-erp-stack' },
   { title: 'PostgreSQL 하나로 해낸 하이브리드 검색 — pgvector + trigram + RRF', tag: 'Search', date: '2026.04.24', link: '/projects/groupware/2026-04-24-pgvector-hybrid-search' },
-  { title: 'Self-hosted Gitea Runner 가 VSCode 환경변수를 물고 늘어지는 함정', tag: 'DevOps TIL', date: '2026.04.24', link: '/projects/groupware/2026-04-24-gitea-runner-vscode-env-til' },
-  { title: 'DRP — AI 드로잉 로봇 플랫폼', tag: 'Project', date: '2025.03.20', link: '/projects/drp' },
 ]
 
 const domains = [
@@ -138,12 +139,12 @@ const techStack = [
     <!-- Projects -->
     <div class="section-divider"><span>Projects</span></div>
     <section class="section">
-      <a href="/projects/drp" class="project-card glass-strong">
+      <a href="/projects/drp/" class="project-card glass-strong">
         <div class="project-header">
           <span class="project-name">DRP — Drawing Robot Platform</span>
-          <span class="project-status">진행중</span>
+          <span class="project-status">진행중 · 연구 노트 시리즈</span>
         </div>
-        <div class="project-desc">사진을 AI로 라인드로잉으로 변환하고 산업용 로봇팔이 실시간으로 그림을 그리는 시스템. 전국 다수 현장에 배포된 로봇들의 원격 모니터링 플랫폼.</div>
+        <div class="project-desc">사진을 AI로 라인드로잉으로 변환하고 산업용 로봇팔이 실시간으로 그림을 그리는 시스템. 전국 다수 현장에 배포된 로봇들의 원격 모니터링 플랫폼. 설계 의사결정과 개선 방향을 10편 시리즈로 정리 중.</div>
         <div class="project-tags">
           <span>FastAPI</span><span>Flutter</span><span>Gemini AI</span><span>OpenCV</span><span>Docker</span><span>JAKA Robot</span>
         </div>

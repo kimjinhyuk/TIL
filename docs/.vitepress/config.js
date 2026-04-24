@@ -61,7 +61,21 @@ function sidebarProjects() {
       items: [
         {
           text: "DRP — AI 드로잉 로봇 플랫폼",
-          link: "/projects/drp",
+          link: "/projects/drp/",
+          items: [
+            {
+              text: "#00 시스템 개요 & ADR",
+              link: "/projects/drp/2026-04-25-00-system-overview-adr",
+            },
+            {
+              text: "#01 Java → Python 마이그레이션",
+              link: "/projects/drp/2026-04-25-01-java-to-python-migration",
+            },
+            {
+              text: "#02 JAKA raw TCP/JSON 프로토콜",
+              link: "/projects/drp/2026-04-25-02-jaka-raw-tcp-protocol",
+            },
+          ],
         },
         {
           text: "사내 그룹웨어 / ERP",
