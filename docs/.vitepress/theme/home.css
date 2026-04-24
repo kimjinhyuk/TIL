@@ -179,8 +179,9 @@ body:has(.home-page)::before {
   padding: 18px 22px; margin-bottom: 8px; border-radius: 12px;
   display: flex; justify-content: space-between; align-items: center;
   transition: all 0.25s; cursor: pointer;
+  text-decoration: none; color: inherit;
 }
-.home-page .post-item:hover { transform: translateX(4px); }
+.home-page .post-item:hover { transform: translateX(4px); text-decoration: none; }
 .home-page .post-title { font-size: 14px; color: #a0b0d0; font-weight: 400; }
 .home-page .post-meta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .home-page .post-tag { font-size: 10px; color: rgba(130,160,255,0.5); background: rgba(100,130,255,0.06); border-radius: 4px; padding: 2px 8px; font-weight: 500; }
@@ -199,13 +200,16 @@ body:has(.home-page)::before {
 
 /* Project */
 .home-page .project-card {
+  display: block;
   border-radius: 18px; padding: 32px; transition: all 0.3s; position: relative; overflow: hidden;
+  text-decoration: none; color: inherit;
 }
+.home-page .project-card + .project-card { margin-top: 16px; }
 .home-page .project-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
   background: linear-gradient(90deg, transparent, rgba(140,170,255,0.35), transparent);
 }
-.home-page .project-card:hover { transform: translateY(-2px); }
+.home-page .project-card:hover { transform: translateY(-2px); text-decoration: none; }
 .home-page .project-header { display: flex; justify-content: space-between; align-items: center; }
 .home-page .project-name { font-size: 18px; font-weight: 600; color: #d0d8f0; }
 .home-page .project-status {

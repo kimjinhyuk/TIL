@@ -63,6 +63,24 @@ function sidebarProjects() {
           text: "DRP — AI 드로잉 로봇 플랫폼",
           link: "/projects/drp",
         },
+        {
+          text: "사내 그룹웨어 / ERP",
+          link: "/projects/groupware/",
+          items: [
+            {
+              text: "온프레미스 스택 선택의 이유",
+              link: "/projects/groupware/2026-04-24-onprem-erp-stack",
+            },
+            {
+              text: "pgvector 하이브리드 검색",
+              link: "/projects/groupware/2026-04-24-pgvector-hybrid-search",
+            },
+            {
+              text: "Gitea Runner × VSCode env 함정",
+              link: "/projects/groupware/2026-04-24-gitea-runner-vscode-env-til",
+            },
+          ],
+        },
       ],
     },
   ];

@@ -1,10 +1,9 @@
 <script setup>
 const posts = [
-  { title: 'FastAPI 에러 처리 체계화 — 도메인별 예외 설계', tag: 'FastAPI', date: '2025.03.15' },
-  { title: 'Docker Compose 멀티 서비스 구성 가이드', tag: 'Docker', date: '2025.03.10' },
-  { title: 'OpenCV 이미지 벡터화 — 라인 추출에서 경로 최적화까지', tag: 'OpenCV', date: '2025.03.05' },
-  { title: 'Tailscale VPN으로 현장 서버 원격 접근 구축하기', tag: 'Infra', date: '2025.02.28' },
-  { title: 'Flutter Riverpod 상태관리 — Provider 패턴 정리', tag: 'Flutter', date: '2025.02.20' },
+  { title: '사내 ERP 를 FastAPI + Next.js + 온프레미스 LLM 으로 만들면서 — 스택 선택의 이유', tag: 'Architecture', date: '2026.04.24', link: '/projects/groupware/2026-04-24-onprem-erp-stack' },
+  { title: 'PostgreSQL 하나로 해낸 하이브리드 검색 — pgvector + trigram + RRF', tag: 'Search', date: '2026.04.24', link: '/projects/groupware/2026-04-24-pgvector-hybrid-search' },
+  { title: 'Self-hosted Gitea Runner 가 VSCode 환경변수를 물고 늘어지는 함정', tag: 'DevOps TIL', date: '2026.04.24', link: '/projects/groupware/2026-04-24-gitea-runner-vscode-env-til' },
+  { title: 'DRP — AI 드로잉 로봇 플랫폼', tag: 'Project', date: '2025.03.20', link: '/projects/drp' },
 ]
 
 const domains = [
@@ -81,13 +80,18 @@ const techStack = [
     <!-- Posts -->
     <div class="section-divider"><span>Recent Posts</span></div>
     <section class="section">
-      <div v-for="post in posts" :key="post.title" class="post-item glass">
+      <a
+        v-for="post in posts"
+        :key="post.title"
+        :href="post.link"
+        class="post-item glass"
+      >
         <span class="post-title">{{ post.title }}</span>
         <div class="post-meta">
           <span class="post-tag">{{ post.tag }}</span>
           <span class="post-date">{{ post.date }}</span>
         </div>
-      </div>
+      </a>
     </section>
 
     <!-- Tech Stack -->
@@ -134,7 +138,7 @@ const techStack = [
     <!-- Projects -->
     <div class="section-divider"><span>Projects</span></div>
     <section class="section">
-      <div class="project-card glass-strong">
+      <a href="/projects/drp" class="project-card glass-strong">
         <div class="project-header">
           <span class="project-name">DRP — Drawing Robot Platform</span>
           <span class="project-status">진행중</span>
@@ -143,7 +147,17 @@ const techStack = [
         <div class="project-tags">
           <span>FastAPI</span><span>Flutter</span><span>Gemini AI</span><span>OpenCV</span><span>Docker</span><span>JAKA Robot</span>
         </div>
-      </div>
+      </a>
+      <a href="/projects/groupware/" class="project-card glass-strong">
+        <div class="project-header">
+          <span class="project-name">사내 그룹웨어 / ERP</span>
+          <span class="project-status">진행중</span>
+        </div>
+        <div class="project-desc">결재 · 발주 · 재고 · 인사까지 사내 핵심 업무를 자체 운영하는 온프레미스 그룹웨어. PostgreSQL 기반 하이브리드 검색과 로컬 GPU LLM 으로 사내 데이터를 외부에 내보내지 않고 처리합니다.</div>
+        <div class="project-tags">
+          <span>FastAPI</span><span>Next.js 15</span><span>PostgreSQL</span><span>pgvector</span><span>llama.cpp</span><span>Docker Compose</span>
+        </div>
+      </a>
     </section>
 
     <!-- About -->
