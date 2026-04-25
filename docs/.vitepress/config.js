@@ -87,6 +87,22 @@ function sidebarProjects() {
               text: "#05 AI 라인드로잉 (Gemini)",
               link: "/projects/drp/2026-04-25-05-ai-line-drawing-gemini",
             },
+            {
+              text: "#06 펜 자동 캘리브레이션",
+              link: "/projects/drp/2026-04-25-06-pen-auto-calibration",
+            },
+            {
+              text: "#07 세션 관리 + Gentle Stop",
+              link: "/projects/drp/2026-04-25-07-background-session-gentle-stop",
+            },
+            {
+              text: "#08 pull-model 모니터링",
+              link: "/projects/drp/2026-04-25-08-pull-model-monitoring",
+            },
+            {
+              text: "#09 Flutter + 모노레포 + 회고",
+              link: "/projects/drp/2026-04-25-09-flutter-monorepo-retrospective",
+            },
           ],
         },
         {

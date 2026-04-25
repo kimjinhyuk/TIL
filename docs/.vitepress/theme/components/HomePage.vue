@@ -1,11 +1,11 @@
 <script setup>
 const posts = [
+  { title: 'DRP #09 — Flutter 앱 아키텍처 + 모노레포 운영 + 회고와 다음 단계', tag: 'Retrospective', date: '2026.04.25', link: '/projects/drp/2026-04-25-09-flutter-monorepo-retrospective' },
+  { title: 'DRP #08 — 현장 서버 pull-model 모니터링 + heartbeat 버퍼링', tag: 'Monitoring', date: '2026.04.25', link: '/projects/drp/2026-04-25-08-pull-model-monitoring' },
+  { title: 'DRP #07 — 백그라운드 세션 관리 + Gentle Stop', tag: 'Concurrency', date: '2026.04.25', link: '/projects/drp/2026-04-25-07-background-session-gentle-stop' },
+  { title: 'DRP #06 — 펜 자동 캘리브레이션', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-06-pen-auto-calibration' },
   { title: 'DRP #05 — AI 라인 드로잉 (Gemini 2.5 Flash Image)', tag: 'AI', date: '2026.04.25', link: '/projects/drp/2026-04-25-05-ai-line-drawing-gemini' },
   { title: 'DRP #04 — A4 안전 좌표계 — 픽셀, mm, 그리고 클램핑', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-04-a4-safe-coordinate-system' },
-  { title: 'DRP #03 — 이미지 → 벡터 → 로봇 명령 풀 파이프라인', tag: 'Pipeline', date: '2026.04.25', link: '/projects/drp/2026-04-25-03-image-to-robot-pipeline' },
-  { title: 'DRP #02 — JAKA 컨트롤러 raw TCP/JSON 프로토콜 — SDK 가 아닌 이유', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-02-jaka-raw-tcp-protocol' },
-  { title: 'DRP #01 — Android Java TcpClient → Python 마이그레이션: 동작 호환 우선 전략', tag: 'Migration', date: '2026.04.25', link: '/projects/drp/2026-04-25-01-java-to-python-migration' },
-  { title: 'DRP #00 — 시스템 전체 개요와 아키텍처 결정 기록 (ADR)', tag: 'Architecture', date: '2026.04.25', link: '/projects/drp/2026-04-25-00-system-overview-adr' },
 ]
 
 const domains = [

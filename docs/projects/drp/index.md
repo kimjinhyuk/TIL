@@ -95,37 +95,45 @@
     </div>
   </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#06</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">펜 자동 캘리브레이션 <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">스크린 접촉점 자동 측정 · 비전 기반 보정</div>
+  <a href="./2026-04-25-06-pen-auto-calibration" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #2a0f1f; border: 1px solid #f778ba; display: flex; align-items: center; justify-content: center; color: #f778ba; font-weight: 700; font-size: 13px;">#06</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">펜 자동 캘리브레이션</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">5단계 직진 접촉 · SQLite 영속화 · 비전 기반 검증 / 평면 보정 / 자동 재캘리브 로드맵</div>
+      </div>
     </div>
-  </div>
+  </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#07</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">백그라운드 세션 관리 + Gentle Stop <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">스레드 lifecycle · "전원 유지하되 동작만 멈춤" · SSE 진행률</div>
+  <a href="./2026-04-25-07-background-session-gentle-stop" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #0c2d6b; border: 1px solid #58a6ff; display: flex; align-items: center; justify-content: center; color: #58a6ff; font-weight: 700; font-size: 13px;">#07</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">백그라운드 세션 관리 + Gentle Stop</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">6 상태 머신 · stop_program/pause_program 폴백 · SSE/resume/멀티 세션 로드맵</div>
+      </div>
     </div>
-  </div>
+  </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#08</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">현장 서버 pull-model 모니터링 + heartbeat 버퍼링 <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">on-demand check + push heartbeat · Tailscale · Prometheus 로 진화</div>
+  <a href="./2026-04-25-08-pull-model-monitoring" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #1a0e30; border: 1px solid #d2a8ff; display: flex; align-items: center; justify-content: center; color: #d2a8ff; font-weight: 700; font-size: 13px;">#08</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">현장 서버 pull-model 모니터링 + heartbeat 버퍼링</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">양방향 인지 · deque(1000) 재전송 · Slack/Notion 병렬 · Prometheus/OTel 로드맵</div>
+      </div>
     </div>
-  </div>
+  </a>
 
-  <div style="border: 1px dashed #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px; opacity: 0.55;">
-    <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #161b22; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; color: #484f58; font-weight: 700; font-size: 13px;">#09</div>
-    <div style="flex: 1;">
-      <div style="color: #8b949e; font-weight: 600; font-size: 14px;">Flutter 앱 아키텍처 + 모노레포 운영 + 회고와 다음 단계 <span style="font-size:11px; background:#1c1206; color:#f0883e; padding: 1px 6px; border-radius: 4px; margin-left: 6px;">예정</span></div>
-      <div style="color: #484f58; font-size: 12px; margin-top: 4px;">Riverpod 4-layer · 다국어 · 오프라인 드로잉 모드 · 차기 로드맵 종합</div>
+  <a href="./2026-04-25-09-flutter-monorepo-retrospective" style="text-decoration: none; color: inherit;">
+    <div style="border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; background: #0d1117; display: flex; align-items: center; gap: 14px;">
+      <div style="min-width: 44px; height: 44px; border-radius: 50%; background: #1c1206; border: 1px solid #f0883e; display: flex; align-items: center; justify-content: center; color: #f0883e; font-weight: 700; font-size: 13px;">#09</div>
+      <div style="flex: 1;">
+        <div style="color: #e6edf3; font-weight: 600; font-size: 14px;">Flutter 앱 아키텍처 + 모노레포 운영 + 회고와 다음 단계</div>
+        <div style="color: #8b949e; font-size: 12px; margin-top: 4px;">Riverpod 4-layer · JNI potrace 오프라인 모드 · Git Subtree 교훈 · 1년 차기 로드맵</div>
+      </div>
     </div>
-  </div>
+  </a>
 
 </div></div>
 
