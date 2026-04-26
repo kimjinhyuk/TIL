@@ -1,11 +1,11 @@
 <script setup>
 const posts = [
+  { title: 'MRC #02 — Python 버전 지옥: 3.5 전용 SDK 와 3.10+ 메인 서버 공존시키기', tag: 'Architecture', date: '2026.04.26', link: '/projects/mrc/2026-04-26-02-python-version-isolation' },
+  { title: 'MRC #01 — 멀티벤더 협동로봇 통합 아키텍처: Core ABC + 어댑터 패턴', tag: 'Architecture', date: '2026.04.26', link: '/projects/mrc/2026-04-26-01-multi-vendor-architecture' },
+  { title: 'MRC #00 — 시스템 전체 개요와 아키텍처 결정 기록 (ADR)', tag: 'ADR', date: '2026.04.26', link: '/projects/mrc/2026-04-26-00-system-overview-adr' },
   { title: 'DRP #09 — Flutter 앱 아키텍처 + 모노레포 운영 + 회고와 다음 단계', tag: 'Retrospective', date: '2026.04.25', link: '/projects/drp/2026-04-25-09-flutter-monorepo-retrospective' },
   { title: 'DRP #08 — 현장 서버 pull-model 모니터링 + heartbeat 버퍼링', tag: 'Monitoring', date: '2026.04.25', link: '/projects/drp/2026-04-25-08-pull-model-monitoring' },
   { title: 'DRP #07 — 백그라운드 세션 관리 + Gentle Stop', tag: 'Concurrency', date: '2026.04.25', link: '/projects/drp/2026-04-25-07-background-session-gentle-stop' },
-  { title: 'DRP #06 — 펜 자동 캘리브레이션', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-06-pen-auto-calibration' },
-  { title: 'DRP #05 — AI 라인 드로잉 (Gemini 2.5 Flash Image)', tag: 'AI', date: '2026.04.25', link: '/projects/drp/2026-04-25-05-ai-line-drawing-gemini' },
-  { title: 'DRP #04 — A4 안전 좌표계 — 픽셀, mm, 그리고 클램핑', tag: 'Robot', date: '2026.04.25', link: '/projects/drp/2026-04-25-04-a4-safe-coordinate-system' },
 ]
 
 const domains = [
@@ -143,6 +143,16 @@ const techStack = [
     <!-- Projects -->
     <div class="section-divider"><span>Projects</span></div>
     <section class="section">
+      <a href="/projects/mrc/" class="project-card glass-strong">
+        <div class="project-header">
+          <span class="project-name">MRC — 협동로봇 통합 플랫폼</span>
+          <span class="project-status">진행중 · 연구 노트 시리즈</span>
+        </div>
+        <div class="project-desc">Hardware-agnostic 개방형 AI 네이티브 협동로봇 플랫폼. 6개 벤더의 협동로봇을 같은 API · 같은 노드 에디터에서 다루는 것을 목표로, Core ABC + 어댑터 패턴과 ROS2 + AI 오케스트레이션 로드맵을 시리즈로 정리 중.</div>
+        <div class="project-tags">
+          <span>FastAPI</span><span>React Flow</span><span>TailwindCSS</span><span>Shadcn/UI</span><span>Redis</span><span>pybind11</span>
+        </div>
+      </a>
       <a href="/projects/drp/" class="project-card glass-strong">
         <div class="project-header">
           <span class="project-name">DRP — Drawing Robot Platform</span>

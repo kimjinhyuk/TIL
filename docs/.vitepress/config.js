@@ -60,6 +60,24 @@ function sidebarProjects() {
       collapsible: true,
       items: [
         {
+          text: "MRC — 협동로봇 통합 플랫폼",
+          link: "/projects/mrc/",
+          items: [
+            {
+              text: "#00 시스템 개요 & ADR",
+              link: "/projects/mrc/2026-04-26-00-system-overview-adr",
+            },
+            {
+              text: "#01 멀티벤더 통합 아키텍처",
+              link: "/projects/mrc/2026-04-26-01-multi-vendor-architecture",
+            },
+            {
+              text: "#02 Python 버전 격리 전략",
+              link: "/projects/mrc/2026-04-26-02-python-version-isolation",
+            },
+          ],
+        },
+        {
           text: "DRP — AI 드로잉 로봇 플랫폼",
           link: "/projects/drp/",
           items: [
