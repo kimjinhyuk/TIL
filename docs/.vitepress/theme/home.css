@@ -83,8 +83,13 @@ body:has(.home-page)::before {
   z-index: 100; padding: 0 40px; height: 56px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.home-page .nav-logo { font-size: 15px; font-weight: 600; color: #e4e8f1; }
-.home-page .nav-logo span { color: rgba(130,160,255,0.9); }
+.home-page .nav-logo {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 15px; font-weight: 600; color: #e4e8f1;
+  text-decoration: none;
+}
+.home-page .nav-logo-img { width: 24px; height: 24px; display: block; }
+.home-page .nav-logo-text { color: #e4e8f1; }
 .home-page .nav-btn {
   font-size: 12px; color: #a0aec0;
   background: rgba(100,130,255,0.06); border: 1px solid rgba(120,150,255,0.12);

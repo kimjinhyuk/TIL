@@ -47,7 +47,10 @@ const techStack = [
     <div class="top-glow"></div>
 
     <nav class="nav">
-      <div class="nav-logo"><span>J</span> Jin's Wiki</div>
+      <a href="/" class="nav-logo">
+        <img src="/images/j-letter.png" alt="Jin's Wiki" class="nav-logo-img" />
+        <span class="nav-logo-text">Jin's Wiki</span>
+      </a>
       <a href="https://github.com/kimjinhyuk" target="_blank" class="nav-btn">View GitHub</a>
     </nav>
 
