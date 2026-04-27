@@ -8,5 +8,17 @@ dist
 .superpowers
 docs/superpowers/*
 docs/.vitepress/cache
-docs/.vitepress/dist.playwright-mcp
+docs/.vitepress/dist
+
+# Local-only working files
+.worknotes/
+.playwright-mcp/
+
+# Local screenshots (Playwright/dev verification artifacts)
 home-mobile-*.png
+*-header.png
+*-index.png
+home-*.png
+mrc-*.png
+pionoid-*.png
+drp-*.png
